@@ -1,0 +1,106 @@
+/* ===== СБРОС ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0e020d, #2a0a2f);
+    color: #f7f2f5;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #c2a3df;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* ===== ФОРМА ===== */
+form {
+    width: 100%;
+    max-width: 450px;
+    background-color: #1a0a1f;
+    border: 2px solid #381653;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+form label {
+    display: block;
+    color: #c2a3df;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0e020d;
+    border: 2px solid #381653;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input::placeholder {
+    color: #665;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #c2a3df;
+    box-shadow: 0 0 10px rgba(194, 163, 223, 0.3);
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: linear-gradient(135deg, rgb(230, 37, 172), #c2a3df);
+    color: #0e020d;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(230, 37, 172, 0.4);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* ===== ОШИБКИ ===== */
+.error {
+    display: block;
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+/* ===== СООБЩЕНИЕ ФОРМЫ ===== */
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px;
+}
